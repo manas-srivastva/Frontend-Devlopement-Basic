@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* element selector  */
+        div {
+            /* background-color: red; */
+        }
+
+        /* .red specifies class */
+        .red{
+            background-color: red;
+        }
+        /* Id selector */
+        /* // id is green */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div >p{
+            color: blue;
+            background-color: pink;
+        }
+        /* Desecandant selector*/
+        div p{
+            color: blueviolet;
+            background-color: brown;
+        }
+        /* univesal selector */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* psuedo selector */
+          a:visited{
+           color: green;
+          }
+          a:active{
+            background-color: red;
+          }
+          a:hover{
+            background-color: red;
+          }
+            /* make changes in first child */
+          p:first-child{
+            background-color: aqua;
+          }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+
+    </main>
+    <div class ="red">
+        I am a dev
+        <div>
+            <!-- statement under article is not  considered directy under dev -->
+            <article>
+                I am under article under dev
+            </article>
+        </div>
+        <p>I am a para inside</p>
+    </div>
+    <div id="green";>
+        I am another dev
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+</body>
+
+</html>

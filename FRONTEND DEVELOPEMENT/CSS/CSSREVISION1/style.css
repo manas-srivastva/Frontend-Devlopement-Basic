@@ -1,0 +1,30 @@
+h3{
+    color: red;
+}
+
+p{
+    color: pink;
+}
+button
+{
+    color: chartreuse;
+}
+body
+{
+    background-color:black;
+}
+button
+{
+    background-color: crimson;
+}
+*{
+    color: violet;
+}
+
+#headingOne{
+    color: yellow;
+}
+
+#headingTwo{
+    color:chartreuse
+}

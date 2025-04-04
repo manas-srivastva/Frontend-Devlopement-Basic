@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* the specificity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+
+        /* the specificity of this selector is  1+10=11 */
+        h1.cpurple{
+            color: purple;
+        }
+        /* jo class last ma uska color implement hoga */
+        /* the specificity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+        /* ATTRIBUTE SELECTOR HAS MORE SPECIFICITY THAN STYLE TOO */
+        /* the specificity of this selector is 10 */
+         [data-x=a]{
+            background-color: green;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- style has more specificity -->
+        <h1 class="cyellow cred cpurple">CSS specificity</h1>
+       
+      
+    </div>
+</body>
+</html>

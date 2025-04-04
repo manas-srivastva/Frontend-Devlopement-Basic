@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box1{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* pixel of lcd is 1920 */
+            /* width directly not used as bcz if someone is watching on higher or lower resolution than decided then the represnetation of the website will not be good */
+            /* width: 1920px; */
+            width: 100vw;
+            height: 20vh;
+            margin: auto;
+            background-color: red;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            
+            width: 100vw;
+        /* height=80vh */
+            margin:  23px auto;
+            min-height: 10vh;
+            /* font-size: 16px; */
+            background-color: red;
+        }
+        /* div>div used taaki immediate child ape lge ho */
+        .container > div> div{
+            /* em karke jitna font size milne wala tha uska N gunna */
+            /* font-size: 2em; */
+            border: 2px solid blue;
+            width: 50%;
+            font-size: 2rem;
+
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+          
+            color: yellow;
+            font-size: 22px;
+            /* 100vh is same as 100vmin */
+            /* vmin is big in desktop and vice versa in phone */
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+      this is a box
+    </div>
+
+   <div class="container">
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos iste commodi sunt voluptatem accusamus fuga cumque sint facilis enim vero asperiores nostrum veritatis voluptates ab expedita ad, tempora doloremque explicabo non iusto. Illo voluptatum ut mollitia architecto rerum adipisci fugit aliquid harum corporis, earum dolore nemo maxime ducimus assumenda sint. Odio consequuntur nulla distinctio facere.
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum aspernatur, dolore voluptatibus mollitia iste sapiente explicabo dolor, omnis pariatur, ipsa recusandae? Accusamus, porro.
+    </div>
+</div>
+   </div>
+   <div class="mycont">
+    I am another container
+   </div>
+</body>
+</html>

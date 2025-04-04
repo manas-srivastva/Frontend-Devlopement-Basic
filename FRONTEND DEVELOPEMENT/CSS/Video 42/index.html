@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(0.75turn); */
+            /* transform: rotateX(40deg); */
+            transform: rotateY(45deg);
+            /* 1.2 times bada hogaya */
+            /* transform:scale(1.2) */
+            /* skew cannot be done in X axis */
+          
+            transform: translate(40%) skew(45deg);
+        }
+        .Containers{
+            width:20vw;
+            height: 20vh;
+            border:2px solid purple ;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="Containers">
+        CR
+        <div class="box">
+   box
+        </div>
+    </div>
+</body>
+</html>
